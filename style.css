@@ -11,7 +11,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .navbar-brand span:first-child {
-    color: blue;
+    color: indigo;
     font-weight: bold;
 }
 
@@ -21,7 +21,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 
 .navbar-brand span:first-child:hover {
-    color: red;
+    color: indigo;
 }
 
 .navbar-brand span:last-child:hover {
@@ -79,7 +79,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .intro-section h2::first-letter {
  font-style: italic;
-    color: green;
+    color: indigo;
 
 }
 
@@ -90,7 +90,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 .intro-section p::first-letter {
     font-style: italic;
-       color: green;
+       color: indigo;
    
    }
    
@@ -191,7 +191,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .featured-services-box i {
-    color: #16df9d;
+    color: indigo;
     font-size: 2rem;
 }
 
@@ -226,7 +226,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .list-unstyled li i {
-    color: #16df7e;
+    color:indigo;
 }
 
 .about-section img:hover {
@@ -240,7 +240,7 @@ body{font-family: 'Philosopher', sans-serif;}
 /*<!--Start Counts Section -->*/
 
 .counts span {
-    color: #16df7e;
+    color: indigo;
     font-size: 3rem;
     font-weight: bold;
 }
@@ -314,7 +314,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .team h3::first-letter {
-    color: green;
+    color: indigo;
 }
 
 .team p {
@@ -427,7 +427,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 }
 .card h5::first-letter {
-   color: green;
+   color: indigo;
 
 }
 .card h6 {
@@ -438,7 +438,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .card a {
-    color: #ed1d24;
+    color:indigo;
     font-weight: bold;
     margin: 15px;
     font-size: 2rem;
@@ -468,7 +468,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .portfolio .section-title h2::first-letter {
     font-weight: bold;
-    color: green;
+    color: indigo;
 }
 
 .portfolio .portfolio-item {
@@ -529,7 +529,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .testimonials h2::first-letter {
 
-    color: green;
+    color: indigo;
 }
 
 .testimonials-section .testimonials-header h2 {
@@ -538,7 +538,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .testimonials-box h4:first-letter {
-    color: green;
+    color: indigo;
 
 }
 
@@ -613,14 +613,14 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .info h4 {
-    color: crimson;
+    color: lawngreen;
     font-size: 1.1rem;
 
 }
 
 .info i {
     padding: 10px 10px;
-    color: blue;
+    color: indigo;
     font-size: 1.1rem;
 
 }
@@ -646,7 +646,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .site-info span:first-of-type {
-    color: green;
+    color: indigo;
     font-weight: bold;
 }
 
