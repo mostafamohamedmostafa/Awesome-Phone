@@ -41,7 +41,7 @@ body{font-family: 'Philosopher', sans-serif;}
 .navbar-nav .nav-link:hover {
     color: green;
     animation: shadow-wave 2s ease infinite;
-    -webkit-animation: ;
+    -webkit-animation: shadow-wave 2s ease infinite;
 }
 
 .nav-item .btn-style {
@@ -79,7 +79,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .intro-section h2::first-letter {
  font-style: italic;
-    color: blue;
+    color: green;
 
 }
 
@@ -90,7 +90,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 .intro-section p::first-letter {
     font-style: italic;
-       color: blue;
+       color: green;
    
    }
    
