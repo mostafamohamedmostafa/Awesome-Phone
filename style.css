@@ -314,7 +314,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .team h3::first-letter {
-    color: blue;
+    color: green;
 }
 
 .team p {
@@ -329,7 +329,7 @@ body{font-family: 'Philosopher', sans-serif;}
     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     animation: shadow-wave 2s ease infinite;
-    -webkit-animation:;
+    -webkit-animation: shadow-wave 2s ease infinite;
 }
 
 @keyframes shadow-wave {
@@ -427,7 +427,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 }
 .card h5::first-letter {
-   color: blue;
+   color: green;
 
 }
 .card h6 {
@@ -468,7 +468,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .portfolio .section-title h2::first-letter {
     font-weight: bold;
-    color: blue;
+    color: green;
 }
 
 .portfolio .portfolio-item {
@@ -485,6 +485,10 @@ body{font-family: 'Philosopher', sans-serif;}
     transition: all ease-in-out 0.3s;
     background: rgba(255, 255, 255, 0.9);
     padding: 15px;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .portfolio .portfolio-item .portfolio-info h4 {
@@ -525,7 +529,7 @@ body{font-family: 'Philosopher', sans-serif;}
 
 .testimonials h2::first-letter {
 
-    color: blue;
+    color: green;
 }
 
 .testimonials-section .testimonials-header h2 {
@@ -534,7 +538,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .testimonials-box h4:first-letter {
-    color: blue;
+    color: green;
 
 }
 
@@ -571,12 +575,12 @@ body{font-family: 'Philosopher', sans-serif;}
     -ms-border-radius: 10%;
     -o-border-radius: 10%;
     transition: ease-in-out 2s all;
-    -webkit-transition: ease-in-out 2s all;
-    -moz-transition: ease-in-out 2s all;
-    -ms-transition: ease-in-out 2s all;
-    -o-transition: ease-in-out 2s all;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
-
+    -webkit-animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 
@@ -642,13 +646,13 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .site-info span:first-of-type {
-    color: #08526d;
+    color: green;
     font-weight: bold;
 }
 
 .site-info span:last-of-type {
 
-    color: #ed242b;
+    color:yellow;
 }
 
 .site-info a {
@@ -669,6 +673,10 @@ body{font-family: 'Philosopher', sans-serif;}
     color: #ed1d24;
     font-weight: bold;
     transition: ease-in-out 2s all;
+    -webkit-transition: ease-in-out 2s all;
+    -moz-transition: ease-in-out 2s all;
+    -ms-transition: ease-in-out 2s all;
+    -o-transition: ease-in-out 2s all;
 }
 
 .contact-us ul li {
@@ -679,7 +687,7 @@ body{font-family: 'Philosopher', sans-serif;}
 }
 
 .contact-us i {
-    color: aqua;
+    color: greenyellow;
     font-size: 1.5rem;
 }
 
@@ -687,6 +695,10 @@ body{font-family: 'Philosopher', sans-serif;}
     color: #08526d;
     transform: scale(1.1);
     border: #ed1d24 1px solid;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 
