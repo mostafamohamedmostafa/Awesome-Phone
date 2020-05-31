@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Awesome Phone</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon"
+    href="data:image/png;base64,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">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c4a989ea76.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!--Start Nav Bar-->
+  <nav class="navbar navbar-expand-lg  ">
+
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span> Awesome </span><span>Crop</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto ">
+
+          <li class="nav-item active ">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link " href="#"> Team</a>
+          </li>
+
+
+          <li class="nav-item">
+            <button class="btn btn-style">Contact Us</button>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!--ENd Nav Bar-->
+
+  <!--Start Intro-->
+  <section id="intro" class="intro-section">
+    <div class="container">
+      <div class="row">
+        <div class=" col-md intro-header">
+          <h2 class="animated">Elegant and Most Advanced <i class="fas fa-mobile-alt"></i> </h2>
+          <p>We are team of talanted Phone Serivce and Selling <i class="fas fa-mobile-alt"></i> </p>
+          <a href=""><button class="get-started">Get Started</button></a>
+          <a href=""><button class="watch-video btn">Watch Video <i class="far fa-play-circle"></i></button></a>
+        </div>
+
+        <div class="col-md">
+          <img class="img-fluid animated"
+            src="https://image.freepik.com/free-vector/flat-design-people-working-office_52683-23711.jpg" alt="">
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!--End Intro-->
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="about-section">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="https://thumbs.dreamstime.com/b/team-flat-design-style-colorful-illustration-white-background-bright-creative-headline-156115322.jpg" class="img-fluid animated" alt="">
+        </div>
+        <div class="col-lg-6">
+          <h3>Elegant and Most Advanced <i class="fas fa-mobile-alt"></i></h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua.
+          </p>
+          <ul class="list-unstyled">
+            <li><i class="far fa-thumbs-up"></i>Selling most Advanced Phones<i class="fab fa-phoenix-framework"></i></li>
+            <li><i class="far fa-thumbs-up"></i>Fixing All Phones<i class="fas fa-tools"></i></li>
+            <li><i class="far fa-thumbs-up"></i> Custmoize your phone <i class="fab fa-intercom"></i></li>
+            <li><i class="far fa-thumbs-up"></i> Replace phones <i class="fas fa-recycle"></i></li>
+          </ul>
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+  <!--Start Services-->
+  <section id="featured-services" class="featured-services">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-3 col-md-6 ">
+          <div class="featured-services-box">
+            <i class="fab fa-phoenix-framework"></i>
+            <h3>Selling most Advanced Phones</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 ">
+          <div class="featured-services-box">
+            <i class="fas fa-tools"></i>
+            <h3>Fixing All Phones</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+
+        <div class="col-lg-3 col-md-6">
+          <div class="featured-services-box">
+            <i class="fab fa-intercom"></i>
+            <h3> Custmoize your phone </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="featured-services-box">
+            <i class="fas fa-recycle"></i>
+            <h3>Replace phones </h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequuntur vel tempora! Illo, odit
+              distinctio?</p>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--End Services-->
+
+
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
+
+      <div class="row ">
+
+        <div class="col-lg-3 col-6 text-center">
+          <span>6432</span>
+          <p> Clients</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span>9871</span>
+          <p> Phones </p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span>985</span>
+          <p>Team</p>
+        </div>
+
+        <div class="col-lg-3 col-6 text-center">
+          <span>5134</span>
+          <p> Hourse of Support</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- End Counts Section -->
+  <!-- Start Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="service-header">
+        <h2> Our Phones</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus?</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/594452/pexels-photo-594452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <h4>Phone 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/163007/phone-old-year-built-1955-bakelite-163007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <h4>Phone 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
+            <h4>Phone 3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/859264/pexels-photo-859264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <h4>Phone 4</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/1693627/pexels-photo-1693627.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <h4>Phone 5</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="serivces-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/846741/pexels-photo-846741.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <h4>Phone 6</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- End Services Section -->
+
+ 
+  <!--Start Testimonials  Work Section -->
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Customers Opinions</h2>
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/1220757/pexels-photo-1220757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Ahmed</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/915051/pexels-photo-915051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Malk</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/1452130/pexels-photo-1452130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Malk</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/775091/pexels-photo-775091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Mostafa</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/2379886/pexels-photo-2379886.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Mohamed</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="testimonials-box">
+            <img class="img-fluid" src="https://images.pexels.com/photos/783243/pexels-photo-783243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"></img>
+            <h4>Malk</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex magnam fugit quaerat iste commodi assumenda.
+            </p>
+
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+  <!--End Testimonials  Work Section -->
+
+
+  <!--Start Posts Work Section -->
+  <section class="team">
+    <div class="container">
+      <h3 class="text-center"> Our Team</h3>
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore
+        magna aliqua Ut enim veniam </p>
+      <div class="row">
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-1.jpg" alt="Card image cap">
+              <h5 class="card-title">Member 1</h5>
+              <h6 class="card-subtitle mb-2 text-muted">CEO</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-2.jpg" alt="Card image cap">
+              <h5 class="card-title">Member 2</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Excetive</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img class="card-img-top" src="team-3.jpg" alt="Card image cap">
+              <h5 class="card-title">Member 3</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Staff</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisc ing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-square"></i></a>
+              <a href=""><i class="fab fa-google-plus-g"></i></a>
+              <a href=""><i class="fas fa-icons"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+  <!--End Posts Work Section -->
+
+  <!--Start Contact Section -->
+  <section class="contact ">
+    <div class="container">
+
+      <div class="section-title">
+        <h2> COntact Us</h2>
+        <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="info">
+            <div class="address">
+
+              <h4><i class="fas fa-map-signs"></i>Location:</h4>
+              <p>Alexandria Egypt</p>
+            </div>
+
+            <div class="email">
+              <h4><i class="fas fa-at"></i> Email:</h4>
+              <p>info@example.com</p>
+            </div>
+
+            <div class="phone">
+              <h4> <i class="fas fa-phone-volume"></i>Call:</h4>
+              <p>+1 5589 55488 55s</p>
+            </div>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218360.36364995778!2d29.814800765744582!3d31.224034935279008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1590424766998!5m2!1sen!2seg"
+              width="300" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+
+        </div>
+
+
+        <div class="col-lg-6 mt-5 mt-lg-0  ">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="name">Your Name</label>
+                <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+              </div>
+              <div class="form-group col-md-6">
+                <label for="name">Your Email</label>
+                <input type="email" class="form-control" name="email" id="email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name">Subject</label>
+              <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4"
+                data-msg="Please enter at least 8 chars of subject" />
+            </div>
+            <div class="form-group">
+              <label for="name">Message</label>
+              <textarea class="form-control" name="message" rows="10" data-rule="required"
+                data-msg="Please write something for us"></textarea>
+            </div>
+            <div class="mb-3">
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center "><button class="btn-warning" type="submit ">Send Message</button></div>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!--End Contact Section -->
+  <!--Start Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="site-info">
+            <span> Awesome </span><span>Crop</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam. quis nostrud exercitation ullamco laboris commodo conse.</p>
+            <i class="fas fa-arrow-right"> <a href="">Read More</a></i>
+
+
+          </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+          <div class="helpful-links">
+            <h4>Helpful Links</h4>
+            <div class="row">
+              <div class="col text-center">
+                <ul class="list-unstyled">
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">About</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Portfolio</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Team</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href="">Projects</a></li>
+                  <li class="list-item"><i class="fas fa-arrow-right"></i><a href=""> Services</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="contact-us">
+            <h5>Contact US</h5>
+            <ul class="list-unstyled">
+              <li class="list-item"><i class="fas fa-map-marker-alt"></i>ALexandria Egypt</li>
+              <li class="list-item"><i class="fas fa-phone-alt"></i> 011111111111111111</li>
+              <li class="list-item"><i class="fas fa-at"></i><a href="">dev.moustapha@gmail.com</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+
+  <!--End FOoter Section -->
+  <!--Start Copy right Section -->
+
+  <section class="copy-right">
+    <div class="container">
+      <hr>
+      <div class="row">
+        <div class="col text-left">
+          <h6>COPYRIGHT 2020 &copy; AWESOME MOBILE | ALL RIGHTS RESERVED</h6>
+        </div>
+        <div class="col text-right">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google-plus-g"></i>
+          <i class="fab fa-facebook-square"></i>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Copy right Section -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
